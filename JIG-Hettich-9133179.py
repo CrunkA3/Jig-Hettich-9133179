@@ -1,5 +1,9 @@
 """
-Jig for Hettich 9133179 hinge.
+Jig design for Hettich 9133179 hinge assembly.
+
+This module generates a CadQuery-based jig for drilling and aligning the Hettich 9133179
+hinge components. It creates a base structure with stability ribs and defines methods for
+hole creation and positioning.
 """
 
 from cadquery import cq, exporters, importers
@@ -30,7 +34,13 @@ board = (
 
 
 def jig():
-    """Create a jig for the Hettich 9133179 hinge."""
+    """Create a jig for the Hettich 9133179 hinge.
+    
+    Returns:
+        A CadQuery workplane object representing the complete jig assembly,
+        including the base plane, walls, triangular ribs for stability,
+        and with the board removed from the structure.
+    """
     # dimensions in mm
     jig_plane_depth = 150
     jig_plane_thickness = 10
@@ -75,8 +85,16 @@ def jig():
     return jig_base
 
 
-def hinge_top(self):  # create top hole for hinge
-    """Create the top hole for the hinge."""
+def hinge_top(self):
+    """Create the top hole for the hinge.
+    
+    Args:
+        self: The CadQuery workplane object.
+        
+    Returns:
+        The modified workplane with a through-slot cut for the hinge opening,
+        sized to HINGE_LENGTH by HINGE_DIAMETER.
+    """
     result = self.slot2D(HINGE_LENGTH, HINGE_DIAMETER, 0).cutThruAll()
     return result
 
