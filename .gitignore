@@ -1,0 +1,44 @@
+# Byte-kompilierte Dateien
+__pycache__/
+*.py[cod]
+*$py.class
+# C-Erweiterungen
+*.so
+# Distribution/Packaging
+Python
+build/
+dist/
+*.egg-info/
+eggs/
+# PyInstaller
+*.spec
+# Test-/Coverage-Berichte
+htmlcov/
+tox/
+coverage
+pytest_cache/
+# Jupyter Notebook
+ipynb_checkpoints
+# Virtuelle Umgebungen
+env/
+venv/
+env/
+venv/
+# IDE-spezifische Dateien (z.B. VS Code)
+vscode/
+# Mypy und andere Typprüfer
+mypy_cache/
+pyre/
+pytype/
+# Django-spezifische Dateien
+*.log
+local_settings.py
+db.sqlite3
+# Flask-spezifische Dateien
+instance/
+webassets-cache
+
+# Step and STL files
+*.step
+*.stp
+*.stl
