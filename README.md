@@ -76,7 +76,7 @@ Edit the constants at the top of `JIG-Hettich-9133179.py` to modify:
 
 ## License
 
-Specify your project license here.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## References
 
