@@ -140,3 +140,5 @@ if __name__ == "__main__":
     # export the model to a file
     exporters.export(jig_model, "jig-Hettich-9133179.stl")
     exporters.export(jig_model, "jig-Hettich-9133179.step")
+    exporters.export(jig_model_step2, "jig-Hettich-9133179_step2.stl")
+    exporters.export(jig_model_step2, "jig-Hettich-9133179_step2.step")
