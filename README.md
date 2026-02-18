@@ -15,7 +15,7 @@ This project generates a precision jig for manufacturing and assembly of the Het
 
 - Python 3.8+
 - [CadQuery](https://cadquery.readthedocs.io/) - Parametric CAD programming library
-- [OCP VSCode](https://github.com/CadQuery/OCP-vscode) - Visual debugging for OCP/CadQuery models (optional, for development)
+- [OCP VSCode](https://github.com/bernhard-42/vscode-ocp-cad-viewer) - Visual debugging for OCP/CadQuery models (optional, for development)
 
 ## Installation
 
