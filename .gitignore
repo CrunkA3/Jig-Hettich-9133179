@@ -42,3 +42,5 @@ webassets-cache
 *.step
 *.stp
 *.stl
+*.3mf
+*.gcode
